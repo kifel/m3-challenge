@@ -1,0 +1,443 @@
+/*=== GERAL ===*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+/*=== HEADER ===*/
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    padding: 2.8rem 0;
+    background: black;
+}
+
+.header-logo {
+    display: block;
+}
+
+.main-banner {
+    display: block;
+    width: 100%;
+}
+
+/*=== Primeira section ===*/
+
+.top-infocard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6.6rem;
+}
+
+.top-infocard-text {
+    text-align: center;
+    max-width: 77.6rem;
+}
+
+.top-infocard-subtitle {
+    font-weight: 400;
+    font-size: 3.2rem;
+    font-weight: 8rem;
+}
+
+.top-infocard-title {
+    margin-bottom: .6rem;
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+
+.top-infocard-description {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+
+    padding-bottom: 6.5rem;
+}
+
+.top-infocard-image {
+    height: 31.5rem;
+}
+
+/*=== Segunda section ===*/
+
+.top-cards {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 2rem;
+    justify-content: center;
+    padding: 8rem 0;
+    margin-top: 18.7rem;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.6rem 2.6rem 3.4rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+}
+
+.top-card-image {
+    display: block;
+    margin-bottom: 2.6rem;
+}
+
+.top-card-description {
+    padding-top: 2.5rem;
+    max-width: 30.0rem;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
+
+/*=== middle banner ===*/
+
+.middle-banners {
+    background: #E0E0E0;
+}
+
+.middle-banner-wrapper {
+    display: flex;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    top: 6rem;
+
+    margin-inline: 7.2rem;
+   
+}
+
+.middle-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.middle-banner-desktop {
+    display: block;
+    width: 100%;
+}
+
+/*=== BOTTOM CARDS ===*/
+
+.bottom-cards {
+    margin-top: 26rem;
+    margin-inline: 7.2rem;
+}
+
+.bottom-cards-wrapper {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: -60px;
+}
+
+.bottom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.6rem 3.2rem 6.6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+
+    max-height: 40.6rem;
+}
+
+.bottom-card-image {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.bottom-card-description {
+    max-width: 26.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+/*=== INFO-CARD ===*/
+
+.bottom-infocard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14.2rem 0 18rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-infocard-image {
+    width: 136rem;
+}
+
+.bottom-infocard-text {
+    max-width: 55rem;
+    margin-bottom: 3.2rem;
+}
+
+.bottom-infocard-title {
+    margin-bottom: 1.8rem;
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.bottom-infocard-description {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+/*=== FOOTER ===*/
+
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 0;
+    background: black;
+
+}
+
+.footer-icons {
+    display: flex;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.footer-icon {
+    margin: 0 8px;
+}
+
+.footer-text {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+@media screen and (max-width: 414px) {
+
+    .main-banner-desktop,
+    .middle-banner-desktop,
+    .desktop-bottom {
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 415px) {
+
+    .main-banner-mobile,
+    .middle-banner-mobile,
+    .mobile-bottom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .top-cards {
+        grid-template-columns: 1fr;
+        padding: 3.6rem 2.6rem;
+    }
+
+    .middle-banner-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'A B'
+        'C C';
+
+        margin-left: 2.3rem;
+        margin-right: 2.3rem;
+    }
+
+    .middle-banner-mobile {
+        width: 100%;
+    }
+
+    .col-a {
+        grid-area: A;
+    }
+
+    .col-b {
+        grid-area: B;
+    }
+
+    #terceirocard {
+        grid-area: C;
+    }
+
+    .page-footer {
+        padding-bottom: 26px;
+    }
+
+    .footer-text {
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .mobile-bottom {
+        width: 100%;
+    }
+
+    .bottom-infocard-text {
+        margin-inline: 3.3rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .bottom-infocard-title{
+        margin-top: 5.1rem;
+    }
+    .bottom-infocard {
+        padding: 0;
+    }
+
+    .bottom-infocard-description {
+        margin-bottom: 10.4rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .top-infocard {
+        padding-inline: auto;
+    }
+
+    .mobile-top-infocard {
+        max-width: 23.5rem;
+        max-height: 5rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 8rem;
+
+
+        text-align: center;
+        text-transform: uppercase;
+
+
+    }
+
+    .top-infocard-text {
+        margin-bottom: 9rem; 
+    }
+
+    .top-infocard-subtitle {
+        font-size: 2rem;
+    }
+
+    .top-infocard-title {
+        font-size: 2.8rem;
+    }
+
+    .top-infocard-description {
+        max-width: 36rem;
+        height: 11.5rem;
+
+        padding: 0;
+
+        margin-right: 3.1rem;
+        margin-left: 2.6rem;
+    }
+
+    .top-infocard-image {
+        max-width: 23.9rem;
+        max-height: 20.4rem;
+    }
+
+    .bottom-cards {
+        margin-inline: 2.4rem;
+    }
+
+    .desktop-bottom {
+        margin-bottom: 10rem;
+        width: 80%;
+    }
+
+    .bottom-cards-wrapper {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:1200px) {
+    .top-cards {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .middle-banner-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'A B'
+        'C C';
+
+        margin-left: 2.3rem;
+        margin-right: 2.3rem;
+    }
+
+    .col-a {
+        grid-area: A;
+    }
+
+    .col-b {
+        grid-area: B;
+    }
+
+    #terceirocard {
+        grid-area: C;
+    }
+
+    .desktop-bottom {
+        width: 80%;
+    }
+
+    .bottom-cards-wrapper {
+        margin-inline: 2.3rem;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .bottom-card-description {
+        max-width: 28rem;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width:1280px) {
+    .top-infocard-text {
+        max-width: 52rem;
+        margin-right: 7rem;
+    }
+}
